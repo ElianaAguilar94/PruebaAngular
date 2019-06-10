@@ -39,7 +39,6 @@ export class FormularioComponent {
             this.editando=false;
         }else if(URLactual.pathname=='/home/pedido'){
             this.editando=true;
-            console.log(this.datosEdicionUsuario)
             this.formPedido = this.formBuilder.group({
                 'nombre': [this.datosEdicionUsuario.nombre,Validators.required],
                 'fecha':[this.datosEdicionUsuario.fecha,Validators.required],

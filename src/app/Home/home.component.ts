@@ -27,7 +27,6 @@ export class HomeComponent {
        //localStorage.clear();
     }
     public comprarProducto(producto){
-        console.log(producto);
         if(producto.cantidadDisponible<=0){  
             this.showConfirm();
         }else{
@@ -37,8 +36,6 @@ export class HomeComponent {
     }
 
     public verproducto(item){
-
-        console.log('verproducto',item)
         let disposable = this.dialogService.addDialog(DetalleComponent, {
             title:'Detalle del producto: ' + item.descripcion, 
             img: item.imagen})
@@ -48,12 +45,6 @@ export class HomeComponent {
         let disposable = this.dialogService.addDialog(ConfirmComponent, {
             title:'Advertencia', 
             message:'Este producto no tiene disponibilidad'})
-            /*
-            .subscribe((isConfirmed)=>{                   
-            });
-        setTimeout(()=>{
-            disposable.unsubscribe();
-        },10000);*/
     }
 
 }

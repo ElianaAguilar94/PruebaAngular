@@ -1,0 +1,42 @@
+.formUsuario{
+    margin-top:10px;
+    display: block;
+    text-align: -webkit-center;
+}
+.formulario{
+    margin-top:10px;
+    border: 1px solid;
+    width: 50%;
+    height: 70%;
+    padding: 15px;
+}
+.formulario , .opcion , h1{
+    font-family: cursive
+}
+.form{
+   margin-bottom: 10px; 
+}
+.datos{
+    width: 350px;
+    height: 30px;
+}
+.buttonPedido{
+    float: right;
+    margin-right: 200px;
+}
+.buttonVolver{
+    float: left;
+    margin-left: 200px;
+}
+.buttonPedido, .buttonVolver {
+    margin-top:20px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    background:#3D4750;
+    border-radius: 5px;
+}
+a{
+    color: white;
+    font-family: cursive
+}

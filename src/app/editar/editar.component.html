@@ -1,0 +1,10 @@
+<div class="modal-dialog">
+    <div class="modal-content editar">
+        <div class="modal-header">
+            <button type="button" class="close" (click)="close()" >&times;</button>
+            <h4 class="modal-title">Edición datos registrados para producto {{nombreUsuario.producto.descripcion}}</h4>
+        </div>
+        <div class="modal-body">  
+           <app-formulario [datosEdicionUsuario]="datosEdicion"></app-formulario>
+    </div>
+</div>

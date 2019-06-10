@@ -1,0 +1,46 @@
+<div class="formUsuario">
+        <h1>Formulario Pedido</h1>
+    <div class="formulario">
+        <span *ngIf="invalidoForm" style="color:red">Todos los campos son requeridos*</span>
+        <form class="form" [formGroup]="formPedido">
+            <div >
+                <label>Nombre*</label><br>
+                <input class="datos" type="text" formControlName="nombre" >
+            </div>
+            <div >
+                <label>Fecha de nacimiento*</label><br>
+                <input class="datos" type="date" formControlName="fecha">
+            </div>
+            <div>
+                <label>Dirección de envío*</label><br>
+                <input  class="datos" type="direccion" formControlName="direccion">
+            </div>
+            <div >
+                    <label>Cuidad*</label><br>
+                <select class="datos" formControlName="cuidad">
+                    <option class="opcion">Medellín</option>
+                    <option class="opcion">Bogotá</option>
+                    <option class="opcion">Cartagena</option>
+                    <option class="opcion">Manizales</option>
+                </select>
+                
+            </div>
+            
+        </form>
+        <div >
+            <label>Adjuntar cedula*</label><br>
+            <input class="datos" type="file" (change)="cargandoImagen($event.target.files)" multiple>
+            <span *ngIf="!cargaCorrecta" style="color:red">El archivo adjunto debe ser en formato PDF y debe pesar menos de 1MB</span>
+            <div *ngIf="editando">
+                <button  class="buttonPedido" (click)="guardarCambiosEdicion()"><a>Guardar cambios</a></button>
+            </div>
+        </div>
+        
+    </div>
+    <div *ngIf="!editando">
+        <button  class="buttonVolver" (click)="volverInicio()"><a>Atras</a></button>
+        <button  class="buttonPedido" (click)="confirmarPedido()"><a>Hacer pedido</a></button>
+    </div>
+    
+    
+</div>

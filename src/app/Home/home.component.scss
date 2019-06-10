@@ -1,0 +1,33 @@
+.containerpag{
+    display: flex;
+    font-family: cursive;
+}
+.row{
+    background:#EFF6FD;
+    margin: 5px;
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+}
+.product-image{
+    margin-top: 10px;  
+    margin-bottom: 10px;
+}
+
+.col-md-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.descripcion{
+    font-size: 20px;
+}
+.price , .options{
+    display: flex;
+    justify-content: center;
+}
+.options{
+    cursor: pointer;
+}
+

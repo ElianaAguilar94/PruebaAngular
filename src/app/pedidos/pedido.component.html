@@ -1,0 +1,16 @@
+<div class="containerPedido">
+    <h3 class="titlePedido" >Detalle Pedidos</h3>
+    <label class="titlePedido"><h4>Busqueda pedido: </h4></label>&nbsp; 
+    <input  id="id_pedido" [(ngModel)]="id_pedido"  type="text" class="titlePedido" placeholder="Escriba id">&nbsp; 
+    
+    <button  class="buttonBuscar" (click)="busquedaId()"><a>Buscar</a></button> 
+    <button  class="buttonBuscar" (click)="limpiarId()"><a>Limpiar</a></button>
+    <div class="table">
+        <ng2-smart-table #table class="table table-hover" [settings]="Settings" [source]="itemSource" (custom)="onRowCustomButton($event)"></ng2-smart-table>
+        <p style="margin-left:15px"> Total de registros: <b>{{count}}</b></p>
+    </div>
+    
+    <button  class="buttonVolver" (click)="volverInicio()"><a>Atras</a></button>     
+</div>
+
+

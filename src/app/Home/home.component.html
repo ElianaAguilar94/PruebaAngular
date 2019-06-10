@@ -1,0 +1,25 @@
+<div class="containerpag">
+    <div class="row" *ngFor="let item of productosCatalogo">
+        <div class="col-md-3 " >
+            <div class="product-grid" >
+                <div class="product-image" (click)="verproducto(item)">
+                    <a >
+                        <img src={{item.miniatura}}>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <div class="descripcion">{{item.descripcion}}</div>
+                    <div class="price">{{item.precio}}</div>
+                   
+                </div>
+                <div class="options">
+                    <a (click)="comprarProducto(item)" >Comprar Producto</a>
+                </div>
+            </div>
+        </div>             
+    </div> 
+</div>
+
+
+
+

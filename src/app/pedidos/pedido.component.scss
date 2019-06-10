@@ -1,0 +1,32 @@
+.titlePedido{
+    font-family: cursive;
+}
+.containerPedido{
+    display:  block;
+    justify-content: center;
+}
+.table{
+    font-family: cursive;
+    font-size: 20px;
+
+}
+.buttonVolver{
+    float: left;
+    margin-left: 20px;
+    margin-top:20px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    background:#3D4750;
+    border-radius: 5px;
+}
+a{
+    color: white;
+}
+.buttonBuscar{
+    margin-left: 20px;
+    margin-top:20px;
+    cursor: pointer;
+    background:#3D4750;
+    border-radius: 5px;
+}
